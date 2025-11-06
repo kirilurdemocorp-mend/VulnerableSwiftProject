@@ -15,7 +15,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-nio-ssl.git", .exact("2.0.0")),
 
         // Potentially vulnerable SwiftJWT (older versions had JWT verification issues)
-        .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.200")),
+        .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.201")),
 
         // Outdated version of SwiftLog (older logging implementations with edge-case overflow bugs)
         .package(url: "https://github.com/apple/swift-log.git", .exact("1.0.0")),
