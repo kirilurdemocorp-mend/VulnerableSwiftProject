@@ -6,7 +6,7 @@ let package = Package(
     name: "VulnerableSwiftProject",
     platforms: [
         .macOS(.v10_15),
-    ],
+    ], 
     dependencies: [
         // Vulnerable swift-nio-http2 version (DoS via ALTSVC/ORIGIN)
         .package(url: "https://github.com/apple/swift-nio-http2.git", .exact("1.18.0")),
