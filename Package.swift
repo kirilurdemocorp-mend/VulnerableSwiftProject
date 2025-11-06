@@ -18,7 +18,7 @@ let package = Package(
         .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.200")),
 
         // Outdated version of SwiftLog (older logging implementations with edge-case overflow bugs)
-        .package(url: "https://github.com/apple/swift-log.git", .exact("1.0.0")),
+        .package(url: "https://github.com/apple/swift-log.git", .exact("1.6.4")),
 
         // Old CryptoSwift version with known timing attacks and side-channel issues
         .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.1"))
