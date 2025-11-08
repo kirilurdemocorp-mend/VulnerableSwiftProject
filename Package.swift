@@ -12,7 +12,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-nio-http2.git", .exact("1.18.0")),
 
         // Vulnerable swift-nio-ssl version (executable stack RCE)
-        .package(url: "https://github.com/apple/swift-nio-ssl.git", .exact("2.0.0")),
+        .package(url: "https://github.com/apple/swift-nio-ssl.git", .exact("2.36.0")),
 
         // Potentially vulnerable SwiftJWT (older versions had JWT verification issues)
         .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.200")),
