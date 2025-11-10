@@ -21,7 +21,7 @@ let package = Package(
         .package(url: "https://github.com/apple/swift-log.git", .exact("1.0.0")),
 
         // Old CryptoSwift version with known timing attacks and side-channel issues
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.1"))
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.9.0"))
     ],
     targets: [
         .executableTarget(
