@@ -9,19 +9,19 @@ let package = Package(
     ], 
     dependencies: [
         // Vulnerable swift-nio-http2 version (DoS via ALTSVC/ORIGIN)
-        .package(url: "https://github.com/apple/swift-nio-http2.git", .exact("1.18.0")),
+        .package(url: "https://github.com/apple/swift-nio-http2.git", .exact("1.39.0")),
 
         // Vulnerable swift-nio-ssl version (executable stack RCE)
-        .package(url: "https://github.com/apple/swift-nio-ssl.git", .exact("2.0.0")),
+        .package(url: "https://github.com/apple/swift-nio-ssl.git", .exact("2.36.0")),
 
         // Potentially vulnerable SwiftJWT (older versions had JWT verification issues)
-        .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.200")),
+        .package(url: "https://github.com/Kitura/Swift-JWT.git", .exact("3.6.201")),
 
         // Outdated version of SwiftLog (older logging implementations with edge-case overflow bugs)
-        .package(url: "https://github.com/apple/swift-log.git", .exact("1.0.0")),
+        .package(url: "https://github.com/apple/swift-log.git", .exact("1.8.0")),
 
         // Old CryptoSwift version with known timing attacks and side-channel issues
-        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.3.1"))
+        .package(url: "https://github.com/krzyzanowskim/CryptoSwift.git", .exact("1.9.0"))
     ],
     targets: [
         .executableTarget(
